@@ -790,7 +790,7 @@ compare_all_models = pd.DataFrame({"Model":["Randomforest_classifier", "Extra_Tr
                                    "Light_Gradient_Boost_Classifier","Logistic_Regression","MLPClassifier"],
                                    "Accuracy":["rf_accuracy","exr_accuracy","cat_accuracy","xgb_accuracy","model_lgbm_accuracy","lr_accuracy","mlp_accuracy"]})
 
-compare_all_models = compare_all_models.sort_values(by = "Accuracy", palette = "Greens_d")
+compare_all_models = compare_all_models.sort_values(by = "Accuracy", ascending=True")
 
 # set the plot to compare all the models
 plt.figure(figsize(15,7))
